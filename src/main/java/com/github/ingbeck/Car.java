@@ -1,7 +1,7 @@
 package com.github.ingbeck;
 
 public class Car {
-    //Eigenschaften
+    //Properties
     String brand;
     String model;
     String color;
@@ -10,7 +10,7 @@ public class Car {
     int speed;
     boolean isStarted = false;
 
-    //Konstruktoren
+    //Constructors
     public Car(String brand, String model, String color, int ps, int speedMax){
         this.brand = brand;
         this.model = model;
@@ -19,9 +19,10 @@ public class Car {
         this.speedMax = speedMax;
     }
 
-    //Methoden
+    //Methods
+    //method to start a car
     public void start(){
-        if(!isStarted){
+        if(!isStarted){     //checks, if the car is already started
             this.speed = 0;
             this.isStarted = true;
             System.out.println(this.brand + " " + this.model + " is started.");
@@ -31,6 +32,8 @@ public class Car {
 
     }
 
+    //method to accelerate a car by given newSpeed
+    //speed cannot be greater than speedMax
     public void accelerate(int newSpeed){
         if(this.isStarted){
             this.speed += newSpeed;
