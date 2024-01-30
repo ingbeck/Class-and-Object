@@ -21,9 +21,14 @@ public class Car {
 
     //Methoden
     public void start(){
-        this.speed = 0;
-        this.isStarted = true;
-        System.out.println(this.brand + " " + this.model + " is started!");
+        if(!isStarted){
+            this.speed = 0;
+            this.isStarted = true;
+            System.out.println(this.brand + " " + this.model + " is started.");
+        }else{
+            System.out.println(this.brand + " " + this.model + " is already running!");
+        }
+
     }
 
     public void accelerate(int newSpeed){
