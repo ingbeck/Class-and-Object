@@ -22,12 +22,12 @@ public class Car {
     //Methods
     //method to start a car
     public void start(){
-        if(!isStarted){     //checks, if the car is already started
-            this.speed = 0;
-            this.isStarted = true;
-            System.out.println(this.brand + " " + this.model + " is started.");
+        if(!isStarted){     //checks, if the car is already running
+            speed = 0;
+            isStarted = true;
+            System.out.println(brand + " " + model + " is started.");
         }else{
-            System.out.println(this.brand + " " + this.model + " is already running!");
+            System.out.println(brand + " " + model + " is already running!");
         }
 
     }
@@ -35,13 +35,13 @@ public class Car {
     //method to accelerate a car by given newSpeed
     //speed cannot be greater than speedMax
     public void accelerate(int newSpeed){
-        if(this.isStarted){
-            this.speed += newSpeed;
-            if(this.speed < speedMax){
-                System.out.println("Current Speed (" + this.brand + " " + this.model + "): " + this.speed + " km/h");
+        if(isStarted){
+            speed += newSpeed;
+            if(speed < speedMax){
+                System.out.println("Current Speed (" + brand + " " + model + "): " + speed + " km/h");
             }else{
-                this.speed = speedMax;
-                System.out.println("Maximum speed reached (" + this.brand + " " + this.model + "): " + this.speed + " km/h");
+                speed = speedMax;
+                System.out.println("Maximum speed reached (" + brand + " " + model + "): " + speed + " km/h");
             }
         }else{
             System.out.println("Please start engine first!");

@@ -19,8 +19,8 @@ public class Person {
 
     public void introduction(){
         System.out.println("Hello!"+
-                            "\nMy name is " + this.firstName + " " + this.lastName + " - nice to meet you." +
-                            "\nI am " + this.age + " years old, I currently live in " + this.residence + " and I work as a " + this.profession + "." +
-                            "\nFor favorite Food I would choose " + this.favoriteFood);
+                            "\nMy name is " + firstName + " " + lastName + " - nice to meet you." +
+                            "\nI am " + age + " years old, I currently live in " + residence + " and I work as a " + rofession + "." +
+                            "\nFor favorite Food I would choose " + favoriteFood);
     }
 }
