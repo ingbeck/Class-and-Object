@@ -13,5 +13,13 @@ public class Main {
         bmw.accelerate(100);
         bmw.accelerate(60);
         bmw.accelerate(80);
+        System.out.println();
+
+        //Bonus
+        Person ingo = new Person("Ingo", "Becker", 32, "cologne", "system administrator", "gulasch with spätzle");
+        Person robin = new Person("Robin", "Rebel", 30, "hamburg", "senior ux designer", "lasagna");
+        ingo.introduction();
+        System.out.println();
+        robin.introduction();
     }
 }
