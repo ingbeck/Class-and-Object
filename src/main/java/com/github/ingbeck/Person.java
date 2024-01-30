@@ -20,7 +20,7 @@ public class Person {
     public void introduction(){
         System.out.println("Hello!"+
                             "\nMy name is " + firstName + " " + lastName + " - nice to meet you." +
-                            "\nI am " + age + " years old, I currently live in " + residence + " and I work as a " + rofession + "." +
+                            "\nI am " + age + " years old, I currently live in " + residence + " and I work as a " + profession + "." +
                             "\nFor favorite Food I would choose " + favoriteFood);
     }
 }
